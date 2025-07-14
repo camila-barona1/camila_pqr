@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>PQRs | Vivis</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <div class="bg-circle c1"></div>
+    <div class="bg-circle c2"></div>
+    <div class="bg-circle c3"></div>
+    <div class="bg-circle c4"></div>
+    <header class="page-main-title">
+      Quejas de Camila
+    </header>
+    <div class="page-main-subtitle">
+      Cuéntame tu experiencia
+    </div>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p class="main-title">Quejas de Camila</p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Asunto</label>
+              <input type="text" spellcheck="false" />
+            </div>
+            <div class="row description">
+              <label>Detalle</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <div class="row image">
+              <label></label>
+              <label for="imageInput" class="custom-file-label">Imagen</label>
+              <input id="imageInput" type="file" accept="image/*" />
+              <img src="" style="display:none;max-width:100%;margin-top:10px;" />
+            </div>
+            <button></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Agregar PQR</p>
+      </li>
+    </div>
+
+    <!-- Delete confirmation popup -->
+    <div class="delete-popup-box" style="display:none;">
+      <div class="delete-popup">
+        <div class="delete-content">
+          <p class="delete-title">¿Seguro que quieres eliminar esta PQR?</p>
+          <div class="delete-actions">
+            <button class="delete-confirm">Eliminar</button>
+            <button class="delete-cancel">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
