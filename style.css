@@ -482,19 +482,33 @@ form button {
     grid-template-columns: 1fr;
     justify-content: center;
   }
-
   .wrapper li {
     width: 100%;
     max-width: 98vw;
     margin: 0 auto;
+    min-height: 340px;
     height: auto;
-    padding: 18px 10px 22px;
+    padding: 18px 14px 22px 14px; /* Add minimum horizontal padding for card look */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background: #fff;
   }
-
   .popup-box .popup {
     max-width: calc(100% - 15px);
+    min-height: 100vh;
+    overflow-y: auto;
+    align-items: flex-start;
   }
-
+  .popup .content {
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   .bottom-content .settings i {
     font-size: 17px;
   }
