@@ -21,7 +21,11 @@ addBox.addEventListener("click", () => {
   popupTitle.innerText = "Nueva PQR";
   addBtn.innerText = "Agregar PQR";
   popupBox.classList.add("show");
+  if (window.innerWidth > 660) {
   document.querySelector("body").style.overflow = "hidden";
+} else {
+  document.querySelector("body").style.overflow = "auto";
+}
   if (window.innerWidth > 660) titleTag.focus();
 });
 

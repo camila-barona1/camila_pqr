@@ -177,7 +177,7 @@ header,
 
 .popup-box .popup {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
   z-index: 3;
   width: 100%;
@@ -484,9 +484,9 @@ form button {
   }
   .wrapper li {
     width: 100%;
-    max-width: 98vw;
+    max-width: 90vw;
     margin: 0 auto;
-    min-height: 340px;
+    min-height: 160px;
     height: auto;
     padding: 18px 14px 22px 14px; /* Add minimum horizontal padding for card look */
     display: flex;
@@ -503,7 +503,7 @@ form button {
     align-items: flex-start;
   }
   .popup .content {
-    min-height: 100vh;
+    min-height: 90vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -524,5 +524,28 @@ form button {
     margin: 10px auto 16px auto;
     font-size: 1rem;
     padding: 0 8px;
+  }
+}
+
+@media (max-width: 660px) {
+  .popup-box {
+    overflow-y: auto;
+  }
+
+  .popup-box .popup {
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .popup .content {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
