@@ -506,7 +506,7 @@ form button {
     align-items: flex-start;
   }
   .popup .content {
-    min-height: 90vh;
+    min-height: 70vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
