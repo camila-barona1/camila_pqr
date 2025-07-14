@@ -98,7 +98,7 @@ header,
 }
 
 .note span {
-  display: block;
+  display: inline;
   color: #575757;
   font-size: 16px;
   margin-top: 5px;
