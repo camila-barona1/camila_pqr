@@ -496,14 +496,36 @@ form button {
     border-radius: 8px;
     background: #fff;
   }
+  .popup-box {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
   .popup-box .popup {
     max-width: calc(100% - 15px);
-    min-height: 100vh;
-    overflow-y: auto;
+    min-height: unset;
+    width: 100%;
+    overflow-y: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
   }
   .popup .content {
-    min-height: 100vh;
+    min-height: unset;
+    max-height: 90vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
